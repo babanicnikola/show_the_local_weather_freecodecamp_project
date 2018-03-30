@@ -1,0 +1,38 @@
+<head>
+	<title> How's the weather? </title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
+</head>
+
+<body style="background-color: #2f4f4f;color: #f5f5f5;">
+<!-- Main container -->
+	<div class="container-fixed">
+		<h1 id="n1">How's the weather?</h1>
+		<p id="lo"></p>
+	</div>
+	<div class="content">
+		<p hidden id="txt">
+			Current temperature:<br>
+			<span id="temp"></span>
+			<span id="mera" onclick="promeni();">C</span><br>
+			Conditions:<br>
+			<span id="main"></span><br>
+			Description:<br>
+			<span id="desc"></span><br>
+			<img id="ico" src=""></img><br>
+		</p>
+		<input type="button" value="Check" id="b1" onclick="getLocation();"/>
+	</div>
+</body>
